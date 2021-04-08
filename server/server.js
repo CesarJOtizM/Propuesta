@@ -1,7 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
+app.use(bodyParser.json());
+app.use(cors());
 
 import db from './models/index';
 import faker from 'faker';
@@ -15,9 +18,6 @@ import {
   updateProduct,
   deleteProduct,
 } from './APIs/products';
-
-// parse application/json
-app.use(bodyParser.json());
 
 // Products
 app.get('/api/products', getAllProducts);
