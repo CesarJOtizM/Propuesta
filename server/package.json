@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server api",
+  "main": "index.js",
+  "author": "Cesar Ortiz",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack - entry ./app/public/js/index.js - output-filename bundle.min.js - output-path ./app/public/js",
+    "start": "npx nodemon --exec babel-node server.js",
+    "sequelize-skeleton": "npx sequelize init:models; npx sequelize init:config"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "faker": "^5.5.2",
+    "lodash.random": "^3.2.0",
+    "lodash.times": "^4.3.2",
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0",
+    "webpack": "^5.31.0",
+    "webpack-cli": "^4.6.0"
+  }
+}
