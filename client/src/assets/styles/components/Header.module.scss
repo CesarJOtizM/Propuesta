@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  margin-left: 5%;
+  img {
+    width: 100px;
+  }
+}
+
+.menu {
+  display: flex;
+  margin-right: 5%;
+  li {
+    margin: 0 20px;
+    i {
+      font-size: 2rem;
+      color: gray;
+    }
+  }
+}

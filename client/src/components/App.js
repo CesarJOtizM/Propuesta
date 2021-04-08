@@ -1,7 +1,18 @@
-import '../assets/styles/App.css';
+import '../assets/styles/App.scss';
+import { Router } from '@reach/router';
+import Home from '../views/Home';
+
+import Header from './Header';
 
 const App = () => {
-  return <div className='App'>Hello world</div>;
+  return (
+    <>
+      <Header />
+      <Router>
+        <Home path='/' />
+      </Router>
+    </>
+  );
 };
 
 export default App;
