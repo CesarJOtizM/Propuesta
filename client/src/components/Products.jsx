@@ -2,19 +2,17 @@ import React from 'react';
 import { Link } from '@reach/router';
 import styles from '../assets/styles/components/Product.module.scss';
 
-const Products = ({ id }) => {
+const Products = ({ id, image, name, price }) => {
   return (
     <div className={styles.cart}>
-      <img
-        className={styles.img}
-        src='https://res.cloudinary.com/csarotz/image/upload/v1617911606/manzanas_a5h28v.jpg'
-        alt='manzana'
-      />
+      <img className={styles.img} src={image} alt={name} />
       <div className={styles.body}>
-        <Link to={`/prodcuts/${id}`}>Manzanas</Link>
-        <p>Precio: $ 20.000</p>
+        <h2>{name}</h2>
+        <p>Precio: {price}</p>
         <div className={styles.footeer}>
-          <div className={styles.boder}>Detalle</div>
+          <div>
+            <Link to={`/prodcuts/${id}`}>Detalle</Link>
+          </div>
           <div> Agregar al carro</div>
         </div>
       </div>

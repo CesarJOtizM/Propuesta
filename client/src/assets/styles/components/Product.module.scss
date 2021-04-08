@@ -15,7 +15,7 @@
   .body {
     height: 30%;
     text-align: center;
-    a {
+    .h2 {
       font-size: 1.5rem;
       font-weight: 600;
     }
@@ -28,11 +28,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     div {
-      padding: 10px;
+      padding: 14px;
       background-color: #ddffbc;
-    }
-    .boder {
+      border-radius: 10px;
       border-right: 1px solid black;
+      cursor: pointer;
     }
   }
 }
