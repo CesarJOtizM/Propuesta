@@ -1,5 +1,6 @@
 import React from 'react';
 import Advantage from './Advantage';
+import Badges from './Badges';
 import styles from '../Assets/Styles/Components/Advantages.module.scss';
 
 const data = [
@@ -23,29 +24,65 @@ const data = [
   },
 ];
 
+const badge = [
+  {
+    title: 'Distincion de turismo sustentable',
+    imageUrl: 'https://d21jpge5pu54j7.cloudfront.net/others/sello-s.png',
+  },
+  {
+    title: 'Responsible tourism',
+    imageUrl:
+      'https://d21jpge5pu54j7.cloudfront.net/others/wtm-responsible-tourism.png',
+  },
+  {
+    title: 'All are welcome',
+    imageUrl:
+      'https://d21jpge5pu54j7.cloudfront.net/others/all-are-welcome.png',
+  },
+  {
+    title: 'Comodo secure',
+    imageUrl: 'https://d21jpge5pu54j7.cloudfront.net/others/comodo.png',
+  },
+  {
+    title: 'LATAM pass',
+    imageUrl: 'https://d21jpge5pu54j7.cloudfront.net/logos/latam-logo.svg',
+  },
+];
 const Advantages = () => {
   return (
-    <div>
-      <h3 className={styles.title}>
-        ¿Por que reservar en{' '}
-        <span>
-          <img
-            src='https://d21jpge5pu54j7.cloudfront.net/logos/logo-negro.svg'
-            alt='Logo'
+    <>
+      <div>
+        <h3 className={styles.title}>
+          ¿Por que reservar en{' '}
+          <span>
+            <img
+              src='https://d21jpge5pu54j7.cloudfront.net/logos/logo-negro.svg'
+              alt='Logo'
+            />
+          </span>
+          ?
+        </h3>
+        {data.map((adavatage, index) => (
+          <Advantage
+            index={index}
+            key={index}
+            imageUrl={adavatage.imageUrl}
+            title={adavatage.title}
+            content={adavatage.content}
           />
-        </span>
-        ?
-      </h3>
-      {data.map((adavatage, index) => (
-        <Advantage
-          index={index}
-          key={index}
-          imageUrl={adavatage.imageUrl}
-          title={adavatage.title}
-          content={adavatage.content}
-        />
-      ))}
-    </div>
+        ))}
+      </div>
+      <div className={styles.container}>
+        {badge.map((badge, index) => (
+          <Badges
+            key={index}
+            index={index}
+            badge={badge.imageUrl}
+            title={badge.title}
+          />
+        ))}
+      </div>
+    </>
   );
 };
 
