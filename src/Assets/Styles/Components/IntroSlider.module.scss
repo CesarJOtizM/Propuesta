@@ -3,6 +3,7 @@
 .IntroSlider {
   position: relative;
   display: flex;
+  z-index: 1;
   justify-content: center;
   flex-direction: column;
   align-items: center;

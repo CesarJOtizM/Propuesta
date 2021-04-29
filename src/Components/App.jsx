@@ -5,6 +5,7 @@ import Chile from './Chile';
 import Peru from './Peru';
 import Social from './Social';
 import Advantages from './Advantages';
+import Footer from './Footer';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Social />
         <Advantages />
       </main>
+      <Footer />
     </>
   );
 };

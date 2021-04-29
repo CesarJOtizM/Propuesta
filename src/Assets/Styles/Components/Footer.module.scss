@@ -1,0 +1,25 @@
+@import '../Variables.scss';
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  padding: 0 25px;
+  .corp {
+    p {
+      font-weight: 700;
+    }
+    ul {
+      li {
+        font-size: 12px;
+        margin-left: 5px;
+        list-style: none;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+.end {
+  text-align: center;
+  font-size: 12px;
+}
