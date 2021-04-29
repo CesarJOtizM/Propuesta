@@ -2,6 +2,7 @@
 
 .IntroStep {
   display: flex;
+  position: relative;
   margin: 0 0 20px 0;
   justify-content: center;
   align-items: center;
@@ -13,7 +14,7 @@
     overflow: hidden;
     position: relative;
     .image {
-      width: 100%;
+      width: 310px;
       height: 210px;
       border-radius: 20px;
     }
@@ -22,7 +23,7 @@
     background-color: #ffd939;
     position: absolute;
     top: 190px;
-    left: 20px;
+    left: 50px;
     border-radius: 10px;
     .text {
       padding: 9px;

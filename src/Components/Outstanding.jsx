@@ -22,10 +22,10 @@ const data = [
 
 const Outstanding = () => {
   return (
-    <>
+    <div className={styles.container}>
       <h2 className={styles.title}>Destacados</h2>
       <IntroSlider data={data} />
-    </>
+    </div>
   );
 };
 

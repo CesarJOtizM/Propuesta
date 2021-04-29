@@ -1,0 +1,32 @@
+@import '../Variables.scss';
+
+.container {
+  margin: 20px 0;
+  padding: 20px 25px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.85) 99.99%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(https://d21jpge5pu54j7.cloudfront.net/social/collage-denomades-travelers.jpg);
+  text-align: center;
+  color: white;
+  h3 {
+    margin: 20px 0;
+    text-align: center;
+  }
+  img {
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .social {
+    margin-top: 10px;
+    i {
+      margin: 0 10px;
+    }
+  }
+}
